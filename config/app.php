@@ -181,6 +181,8 @@ return [
         // ACL service providers
         Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
 
+        // laravel collective
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -234,6 +236,10 @@ return [
         'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
         'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
         'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
+
+        // laravel collective
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
