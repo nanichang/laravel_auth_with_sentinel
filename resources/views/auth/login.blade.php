@@ -139,11 +139,11 @@
 
 	<div class='login'>
 		<h2>Login</h2>
-		{{ Form::open(['route' => 'register', 'method' => 'post']) }}
+		{{ Form::open(['route' => 'do_login', 'method' => 'post']) }}
 			{{ csrf_field() }}		
 			
-			<input name="email" placeholder="E-Mail Address" type="text">		
-			<input id="pw" name="password" placeholder="Password" type="password">		
+			<input name="email" placeholder="E-Mail Address" type="text" autofocus required>		
+			<input id="pw" name="password" placeholder="Password" type="password"  required>		
 
 			<input class="animated" type="submit" value="Login">
 			
